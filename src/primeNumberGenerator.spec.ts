@@ -17,4 +17,9 @@ describe('Prime Number Generator', () => {
     const expectedOutput = [7901, 7907, 7919];
     expect(primeRange(7900,7920)).to.eql(expectedOutput);
   });
+
+  it('swaps values when starting point is higher than endpoint', () => {
+    const expectedOutput = [7901, 7907, 7919];
+    expect(primeRange(7920,7900)).to.eql(expectedOutput);
+  });
 });
