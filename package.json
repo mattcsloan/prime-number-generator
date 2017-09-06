@@ -1,0 +1,19 @@
+{
+  "name": "prime-number-generator",
+  "version": "1.0.0",
+  "description": "Back-end coding challenge",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "tsc && nyc mocha dist/**/*.spec.js"
+  },
+  "devDependencies": {
+    "@types/mocha": "2.2.41",
+    "@types/node": "7.0.22",
+    "chai": "^4.1.2",
+    "mocha": "^3.4.2",
+    "nyc": "^11.2.0",
+    "tsc": "1.20150623.0",
+    "typescript": "2.3.3"
+  }
+}
