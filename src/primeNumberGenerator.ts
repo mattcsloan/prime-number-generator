@@ -3,6 +3,22 @@ export interface PrimeNumberGenerator {
   isPrime: boolean;
 }
 
+const primeRange = (startingValue: number, endingValue: number) => {
+  var primeList = [];
+
+  // starting value should be less than ending value
+  if(startingValue > endingValue) {
+    const newEnd = startingValue;
+    startingValue = endingValue;
+    endingValue = newEnd;
+  }
+
+  for (var i = startingValue; i != endingValue; ++i) {
+    isPrime(i) && primeList.push(i);
+  }
+  return primeList;
+}
+
 export const isPrime = (currentNumber: number) => {
   if(currentNumber === 2) {
     return true;
@@ -15,3 +31,5 @@ export const isPrime = (currentNumber: number) => {
   }
   return true;
 };
+
+export default primeRange;
