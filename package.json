@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
+    "help": "tsc && node dist/index.js -h",
+    "range": "node dist/index.js",
     "test": "tsc && nyc mocha dist/**/*.spec.js"
   },
   "devDependencies": {
@@ -15,5 +17,8 @@
     "nyc": "^11.2.0",
     "tsc": "1.20150623.0",
     "typescript": "2.3.3"
+  },
+  "dependencies": {
+    "commander": "^2.11.0"
   }
 }
